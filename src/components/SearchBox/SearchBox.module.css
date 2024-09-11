@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 240px;
+  padding: 12px;
+  background-color: #004e92;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.input {
+  padding: 4px 8px 4px 8px;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms ease-in-out;
+  outline: none;
+  &:hover {
+    background-color: #c0e2ff;
+  }
+  &:focus {
+    background-color: #c0e2ff;
+  }
+}
