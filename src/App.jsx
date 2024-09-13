@@ -13,11 +13,7 @@ const initialContacts = [
 
 function App() {
   const [contacts, setContacts] = useState(() => {
-    const savedContacts = JSON.parse(localStorage.getItem("contacts"));
-    if (savedContacts?.length) {
-      return savedContacts;
-    }
-    return initialContacts;
+    return JSON.parse(localStorage.getItem("contacts")) || initialContacts;
   });
 
   const [filter, setFilter] = useState("");
